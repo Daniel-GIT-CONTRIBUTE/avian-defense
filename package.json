@@ -1,7 +1,7 @@
 {
   "name": "final-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a game that was developed for the individual final project in COMP4303 in Memorial University of Newfoundland. The main technologies used for this project were Javascript, Blender, THREE.js, HTML/CSS, and Davincci Resolve.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
