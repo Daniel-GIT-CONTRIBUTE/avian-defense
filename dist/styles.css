@@ -1,0 +1,244 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+canvas{
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+@media(min-width: 850px){
+    .guide{
+        position: absolute; /* Make sure it's positioned over the canvas */
+        z-index: 10; /* Higher z-index ensures it's above other content */
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        width: auto; /* Adjust as needed */
+        top: 5px; /* Distance from the top of the viewport */
+        color: white;
+        
+    }
+    .upper-right{
+        justify-content: bottom;
+        margin-right: 30px;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+@media(max-width: 850px){
+    .guide{
+        position: absolute; /* Make sure it's positioned over the canvas */
+        z-index: 10; /* Higher z-index ensures it's above other content */
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        width: auto; /* Adjust as needed */
+        top: 10px; /* Distance from the top of the viewport */
+        opacity: 0%;
+        color: white;
+    }
+    .upper-right{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+        margin-right: 30px;
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+
+.console {
+    z-index: 10; 
+    display: flex;
+    flex-basis: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    justify-content: center;
+    bottom: 50px;
+    right: 15px;
+}
+
+.output {
+    position: absolute;
+    top: 45vh;
+    left: 40vw;
+    opacity: 50%;
+}
+
+.stats-div{
+    z-index: 10; 
+    position: fixed;
+    width: 100vw;
+    
+}
+
+.stats{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+
+
+.grid-console{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: grid;
+    grid-template-rows: repeat( 3, 67px);
+	grid-template-columns: repeat(3, 122px);
+    z-index: 10;
+}
+.purchase {
+    border-radius: 5px;
+    background-color: black;
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 65px;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+    opacity: 0%;
+} 
+.grid-text{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: grid;
+    grid-template-rows: repeat( 3, 67px);
+	grid-template-columns: repeat(3, 122px);
+    z-index: 9;
+}
+
+.champ-description{
+    border-radius: 5px;
+    background-color: black;
+    outline: none;
+    border: none;
+    width: 110px;
+    height: 59px;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+    /* text-align: center; */
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.champ_name{
+    padding:0%;
+    padding-left: 2%;
+    font-size: 12px;
+    color: white;    
+}
+.t1{
+    padding:0%;
+    padding-left: 2%;
+    font-size: 9px;
+    color: white;
+}
+.t2{
+    padding:0%;
+    padding-left: 2%;
+    font-size: 9px;
+    color: white;
+}
+.t3{
+    padding:0%;
+    padding-left: 2%;
+    font-size: 9px;
+    color: white;
+}
+
+.purchase {
+    border-radius: 5px;
+    background-color: black;
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 65px;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+} 
+
+
+.world-control{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 150px;
+    left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 65px;
+    height: 35px;
+    font-size: 12px;
+    /* background-color: white; */
+    font-weight: 600;
+    cursor: pointer; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 8px;
+}
+#music{
+    border-radius: 5%;
+    background-color: white;
+    font-weight: 1200;
+    font-size: 25px;        
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    z-index: 10;
+}
+
+#pause{
+
+        border-radius: 5%;
+        background-color: white;
+        font-weight: 1200;
+        font-size: 35px;        
+        margin-top: 3px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        z-index: 10;
+    }
+    
+#skip{
+    border-radius: 5%;
+    background-color: white;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+
