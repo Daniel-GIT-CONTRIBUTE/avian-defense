@@ -32,9 +32,9 @@ export class STORE {
         let leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
 		//Left Eye (LE) and Right Eye (RE) MESH
 		let simpleEyeGeom = new THREE.PlaneGeometry(2.4, 2);
-		let textureRE = textureLoader.load('../../public/images/RightEye.png');
+		let textureRE = textureLoader.load('../../../dist/public/images/RightEye.png');
 		let MaterialRE = new THREE.MeshBasicMaterial({map : textureRE});
-		let textureLE = textureLoader.load('../../public/images/LeftEye.png');
+		let textureLE = textureLoader.load('../../../dist/public/images/LeftEye.png');
 		let MaterialLE = new THREE.MeshBasicMaterial({map : textureLE});
         let MeshRE = new THREE.Mesh(simpleEyeGeom, MaterialRE);
         let MeshLE = new THREE.Mesh(simpleEyeGeom, MaterialLE);

@@ -3,15 +3,15 @@ import * as THREE from 'three';
 import { Resources } from '../Util/Resources.js';
 
 // Load resources
-let files = [{name: 'champ1', url:'../../public/Models/birds/1rubber.glb'},
-			{name: 'champ2', url:'../../public/Models/birds/2chicken.glb'},
-            {name: 'champ3', url:'../../public/Models/birds/3pigeon.glb'},
-            {name: 'champ4', url:'../../public/Models/birds/4duck.glb'},
-            {name: 'champ5', url:'../../public/Models/birds/5mallard.glb'},
-            {name: 'champ6', url:'../../public/Models/birds/6gull.glb'},
-            {name: 'champ7', url:'../../public/Models/birds/7goose.glb'},
-            {name: 'champ8', url:'../../public/Models/birds/8gull.glb'},
-            {name: 'champ9', url:'../../public/Models/birds/9goose.glb'},
+let files = [{name: 'champ1', url:'../../../dist/public/Models/birds/1rubber.glb'},
+			{name: 'champ2', url:'../../../dist/public/Models/birds/2chicken.glb'},
+            {name: 'champ3', url:'../../../dist/public/Models/birds/3pigeon.glb'},
+            {name: 'champ4', url:'../../../dist/public/Models/birds/4duck.glb'},
+            {name: 'champ5', url:'../../../dist/public/Models/birds/5mallard.glb'},
+            {name: 'champ6', url:'../../../dist/public/Models/birds/6gull.glb'},
+            {name: 'champ7', url:'../../../dist/public/Models/birds/7goose.glb'},
+            {name: 'champ8', url:'../../../dist/public/Models/birds/8gull.glb'},
+            {name: 'champ9', url:'../../../dist/public/Models/birds/9goose.glb'},
         ];
 const resources = new Resources(files);
 await resources.loadAll();
