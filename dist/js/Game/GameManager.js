@@ -7,7 +7,7 @@ import { STORE } from './World/STORE.js';
 import { ChampionManager } from './ChampionManager.js';
 
 // Load resources
-let files = [{name: 'duck', url:'../../../dist/public/Models/duck/scene.gltf'}];
+let files = [{name: 'duck', url:'../../public/Models/duck/scene.gltf'}];
 const resources = new Resources(files);
 await resources.loadAll();
 

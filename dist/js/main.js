@@ -12,7 +12,7 @@ const orbitControls = new OrbitControls(camera, renderer.domElement);
 const clock = new THREE.Clock();
 
 // Create music and music bool
-let GAME_MUSIC = new Audio('../../../dist/public/music/retro.mp3');
+let GAME_MUSIC = new Audio('../../public/music/retro.mp3');
 let MUSIC_IS_ON = false;
 GAME_MUSIC.muted = true;
 

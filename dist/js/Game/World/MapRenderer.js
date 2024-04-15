@@ -29,7 +29,7 @@ export class MapRenderer {
 
 		}
 		
-		let texture = textureLoader.load('../../../dist/public/images/Grass.png');
+		let texture = textureLoader.load('../../public/images/Grass.png');
 		let groundMaterial = new THREE.MeshStandardMaterial({ map: texture });
 		let gameObject = new THREE.Group();
 		let ground = new THREE.Mesh(this.groundGeometries, groundMaterial);

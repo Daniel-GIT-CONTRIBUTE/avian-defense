@@ -5,15 +5,15 @@ import { BonusBox } from './Behavior/BonusBox.js';
 import { BonusMouse } from './Behavior/BonusMouse.js';
 // Load resources
 // "./public/images/control_icon_white.png"
-let files = [{name: 'L1_monster', url:'../../../dist/public/Models/worm.glb'},
-            {name: 'L2_monster', url:'../../../dist/public/Models/scifi.glb'},
-            {name: 'L3_monster', url:'../../../dist/public/Models/Yoshi.glb'},
-            {name: 'L4_monster', url:'../../../dist/public/Models/borderlands.glb'},
-            {name: 'L5_monster', url:'../../../dist/public/Models/orc2.glb'},
-            {name: 'L6_monster', url:'../../../dist/public/Models/diavoletto.glb'},
-            {name: 'L7_monster', url:'../../../dist/public/Models/dragon.glb'},
-            {name: 'L00_monster', url:'../../../dist/public/Models/box.glb'},
-            {name: 'L01_monster', url:'../../../dist/public/Models/mouse.glb'}
+let files = [{name: 'L1_monster', url:'../../public/Models/worm.glb'},
+            {name: 'L2_monster', url:'../../public/Models/scifi.glb'},
+            {name: 'L3_monster', url:'../../public/Models/Yoshi.glb'},
+            {name: 'L4_monster', url:'../../public/Models/borderlands.glb'},
+            {name: 'L5_monster', url:'../../public/Models/orc2.glb'},
+            {name: 'L6_monster', url:'../../public/Models/diavoletto.glb'},
+            {name: 'L7_monster', url:'../../public/Models/dragon.glb'},
+            {name: 'L00_monster', url:'../../public/Models/box.glb'},
+            {name: 'L01_monster', url:'../../public/Models/mouse.glb'}
             ];
 const resources = new Resources(files);
 await resources.loadAll();
