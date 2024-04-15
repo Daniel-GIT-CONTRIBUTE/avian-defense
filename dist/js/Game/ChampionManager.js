@@ -13,15 +13,15 @@ import { Resources } from '../Util/Resources.js';
 //             {name: 'champ8', url:'../../../dist/public/Models/birds/8gull.glb'},
 //             {name: 'champ9', url:'../../../dist/public/Models/birds/9goose.glb'},
 //         ];
-let files = [{name: 'champ1', url:'../../../dist/public/Models/duck/scene.gltf'},
-			{name: 'champ2', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'champ3', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'champ4', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'champ5', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'champ6', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'champ7', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'champ8', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'champ9', url:'../../../dist/public/Models/duck/scene.gltf'},
+let files = [{name: 'champ1', url:'../../public/Models/duck/scene.gltf'},
+			{name: 'champ2', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'champ3', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'champ4', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'champ5', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'champ6', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'champ7', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'champ8', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'champ9', url:'../../public/Models/duck/scene.gltf'}
         ];
 const resources = new Resources(files);
 await resources.loadAll();

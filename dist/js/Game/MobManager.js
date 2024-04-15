@@ -16,15 +16,15 @@ import { BonusMouse } from './Behavior/BonusMouse.js';
 //             {name: 'L01_monster', url:'../../../dist/public/Models/mouse.glb'}
 //             ];
 
-let files = [{name: 'L1_monster',url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L2_monster', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L3_monster', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L4_monster', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L5_monster', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L6_monster', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L7_monster', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L00_monster', url:'../../../dist/public/Models/duck/scene.gltf'},
-            {name: 'L01_monster', url:'../../../dist/public/Models/duck/scene.gltf'}
+let files = [{name: 'L1_monster',url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L2_monster', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L3_monster', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L4_monster', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L5_monster', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L6_monster', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L7_monster', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L00_monster', url:'../../public/Models/duck/scene.gltf'},
+            {name: 'L01_monster', url:'../../public/Models/duck/scene.gltf'}
             ];
 const resources = new Resources(files);
 await resources.loadAll();
