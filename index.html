@@ -1,8 +1,148 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Avian Defense</title><link rel="stylesheet" href="./index.b2b0ca02.css"></head><body> <canvas id="bg"></canvas> <script type="importmap">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Avian Defense</title>
+		<link rel="stylesheet" href="./index.4d663569.css"> 
+	</head>
+	<body>
+		<canvas id="bg"></canvas>
+		<script type="importmap">
 			{
 			  "imports": {
 				"three": "https://cdn.jsdelivr.net/npm/three@v0.163.0/build/three.module.js",
 				"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"
 			  }
 			}
-		</script> <script type="module" src="./index.1df024ea.js"></script> <div class="guide"> <img id="controls" src="./control_icon_white.79fbdaa1.png" width="200" height="110"> <img id="controls" src="./mouse0.f320fa35.png" width="50" height="110"> </div> <div id="purchase-console"> <div id="purchase-title">BUILD 🛠️</div> <div class="grid-console"> <button class="purchase" id="champ 1"></button> <button class="purchase" id="champ 2"></button> <button class="purchase" id="champ 3"></button> <button class="purchase" id="champ 4"></button> <button class="purchase" id="champ 5"></button> <button class="purchase" id="champ 6"></button> <button class="purchase" id="champ 7"></button> <button class="purchase" id="champ 8"></button> <button class="purchase" id="champ 9"></button> </div> <div class="grid-text"> <div class="champ-description" id="champ-1"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c1.6b8be2fc.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-2"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c2.4b325d54.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-3"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c3.3b34bf41.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-4"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c4.3877110d.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-5"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c5.438217e1.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-6"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c6.f25016ab.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-7"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c7.9ae63b6e.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-8"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c8.d627543b.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> <div class="champ-description" id="champ-9"> <div class="champ-name"> <img class="champ-img" id="controls" src="./c9.f364f21a.png" width="50" height="50"> </div> <div class="t1"></div> <div class="t2"></div> <div class="t3"></div> </div> </div> </div> <div class="stats-div"> <div class="stats"> <h1 class="upper-right">ROUND: <span id="round"></span></h1> <h1 class="upper-right">⏱: <span id="count_down"></span></h1> <h1 class="upper-right">💵: <span id="money"></span></h1> <h1 class="upper-right">🧍🏿: <span id="units"></span></h1> <h1 class="upper-right">❤️: <span id="life"></span></h1> </div> </div> <div class="output"> <h1><span id="console_log"></span></h1> </div> <div class="world-control"> <div class="world" id="music">🔇</div> <div class="world" id="pause">⏸</div> <div class="world" id="skip">SKIP ROUND</div> </div> </body></html>
+		</script>
+		<script src="./index.18dbc454.js" defer=""></script>
+
+
+
+		<div id="pop-up">
+			<div id="pop-up-dialog">
+				<p>This game works on PC/MAC only</p>
+				<p>Sound not supported on Safari Browser</p>
+				<button id="pop-up-btn">CONTINUE</button>
+			</div>
+		</div>
+
+		<div class="guide">
+			<img id="controls" src="./control_icon_white.62cfebc0.png" width="200" height="110">
+			<img id="controls" src="./mouse0.6984df07.png" width="50" height="110">
+		</div>
+		<div id="purchase-console">
+			<div id="purchase-title">BUILD 🛠️</div>
+
+			<div class="grid-console">
+				<button class="purchase" id="champ 1"></button>
+				<button class="purchase" id="champ 2"></button>
+				<button class="purchase" id="champ 3"></button>
+				<button class="purchase" id="champ 4"></button>
+				<button class="purchase" id="champ 5"></button>
+				<button class="purchase" id="champ 6"></button>
+				<button class="purchase" id="champ 7"></button>
+				<button class="purchase" id="champ 8"></button>
+				<button class="purchase" id="champ 9"></button>
+			</div>
+
+			<div class="grid-text">
+				<div class="champ-description" id="champ-1">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c1.2a5aa94c.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-2">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c2.b2b7aa69.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-3">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c3.74d4426b.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-4">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c4.b6495364.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-5">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c5.e2318af2.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-6">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c6.9cb513f4.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-7">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c7.bd29f7a2.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-8">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c8.70a714f2.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+				<div class="champ-description" id="champ-9">
+					<div class="champ-name">
+						<img class="champ-img" id="controls" src="./c9.3e4c1582.png" width="50" height="50">
+					</div>
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+				</div>
+			</div>
+	</div>
+
+
+
+	<div class="stats-div">
+		<div class="stats">
+			<h1 class="upper-right">ROUND: <span id="round"></span></h1>
+			<h1 class="upper-right">⏱: <span id="count_down"></span></h1>
+			<h1 class="upper-right">💵: <span id="money"></span></h1>
+			<h1 class="upper-right">🧍🏿: <span id="units"></span></h1>
+			<h1 class="upper-right">❤️: <span id="life"></span></h1>
+		</div>
+	</div>
+	<div class="output">
+		<h1><span id="console_log"></span></h1>
+	</div>
+
+	<div class="world-control">
+		<div class="world" id="music">🔇</div>
+		<div class="world" id="pause">⏸</div>
+		<div class="world" id="skip">SKIP ROUND</div>
+	</div>
+	
+
+</body>
+</html>
